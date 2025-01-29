@@ -1,0 +1,15 @@
+.list-with-separator {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+  align-items: center;
+}
+
+.list-with-separator li {
+  padding: 0 10px;
+  border-right: 1px solid #000;
+}
+
+.list-with-separator li:last-child {
+  border-right: none;
+}

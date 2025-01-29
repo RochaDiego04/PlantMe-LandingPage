@@ -1,0 +1,39 @@
+.button {
+  display: inline-block;
+  border: none;
+  background: transparent;
+  font-family: var(--body-font);
+  text-decoration: none;
+}
+
+.icon-button {
+  padding: 0.5rem 0.8rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.primary-button {
+  color: var(--white);
+  background-color: var(--primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.primary-button.icon-button {
+  background-color: #3a6150;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.icon-button:hover {
+  cursor: pointer;
+}
+
+.primary-button.icon-button:hover {
+  cursor: pointer;
+  background-color: rgb(34, 57, 47);
+}
