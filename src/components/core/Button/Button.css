@@ -14,11 +14,23 @@
 }
 
 .primary-button {
-  color: var(--white);
-  background-color: var(--primary);
+  color: white;
+  background-color: #3a6150;
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+}
+
+.primary-button:focus,
+.primary-button:hover {
+  cursor: pointer;
+  background-color: #406b58;
+  outline: 3px solid #93d1b7;
+}
+
+.primary-button:active {
+  background-color: #406b58;
+  outline: none;
 }
 
 .primary-button.icon-button {

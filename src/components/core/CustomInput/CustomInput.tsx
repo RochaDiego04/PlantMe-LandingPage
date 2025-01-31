@@ -25,7 +25,7 @@ export default function CustomInput({
 }: CustomInputProps) {
   return (
     <div
-      className={`flex bg-white dark:bg-grey4 items-center justify-center border border-[#3a6150] text-sm pl-4 ${
+      className={`flex bg-white dark:bg-grey4 items-center justify-center border-2 border-[#3a6150] text-sm pl-4 ${
         className ? className : ""
       }`}
     >

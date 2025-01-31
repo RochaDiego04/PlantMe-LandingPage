@@ -6,8 +6,8 @@ import { ButtonMode } from "../../enums/ButtonMode";
 
 export default function Header() {
   return (
-    <header className="flex justify-between items-center py-4 px-16 bg-amber-500">
-      <div className="flex gap-20 bg-amber-200">
+    <header className="flex justify-between items-center py-4 px-16">
+      <div className="flex gap-20">
         <img src={logo} alt="logo image" />
         <Nav></Nav>
       </div>

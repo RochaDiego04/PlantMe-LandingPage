@@ -1,0 +1,22 @@
+.heroSection__container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: var(--screen-sm)) {
+  .heroSection__container {
+    display: block;
+  }
+}
+
+.heroSection__leftSide {
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-start;
+  align-self: center;
+}
+
+.heroSection__rightSide {
+  display: flex;
+  justify-self: end;
+}
