@@ -1,6 +1,6 @@
 import { ReactNode } from "react";
 import "./Button.css";
-import { ButtonMode } from "../../enums/ButtonMode";
+import { ButtonMode } from "../../../enums/ButtonMode";
 
 type ButtonProps = {
   children?: ReactNode;
@@ -8,6 +8,7 @@ type ButtonProps = {
   buttonType?: "button" | "anchor";
   mode?: ButtonMode;
   Icon?: ReactNode;
+  href?: string;
   [key: string]: unknown;
 };
 
@@ -34,7 +35,7 @@ export default function Button({
   return (
     <>
       {isAnchor ? (
-        <a className={cssClasses} {...props}>
+        <a className={cssClasses} href={props.href || "#"} {...props}>
           {Icon && <span className="button-icon">{Icon}</span>}
           {children}
         </a>

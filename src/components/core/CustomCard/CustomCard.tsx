@@ -17,7 +17,6 @@ export default function CustomCard({
 }: CustomCardProps) {
   return (
     <div className="customCard__container bg-[#3A6150]">
-      <div></div>
       <img src={img} alt="card image" className="customCard__image" />
 
       <div className="customCard__content text-white">

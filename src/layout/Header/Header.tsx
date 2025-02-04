@@ -11,9 +11,9 @@ export default function Header() {
         <img src={logo} alt="logo image" />
         <Nav></Nav>
       </div>
-      <div>
+      <div className="w-full max-w-[26rem] sm:max-w-[14rem] md:max-w-[20rem] lg:max-w-[26rem]">
         <CustomInput
-          className="max-w-[500px] sm:w-[14rem] md:w-[20rem] lg:w-[26rem] rounded-[4px]"
+          className="w-full"
           Icon={<img src={search} alt="search icon"></img>}
           buttonMode={ButtonMode.Primary}
           buttonClassName="rounded-[2px]"

@@ -10,7 +10,6 @@
   padding: 0.5rem 0.8rem;
   display: inline-flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
 .primary-button {
@@ -24,7 +23,7 @@
 .primary-button:focus,
 .primary-button:hover {
   cursor: pointer;
-  background-color: #406b58;
+  background-color: #345747;
   outline: 3px solid #93d1b7;
 }
 

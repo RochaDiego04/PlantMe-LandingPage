@@ -1,0 +1,4 @@
+.contactCard__container {
+  background-image: url("/src/assets/contactImage.png");
+  background-size: cover; /* Fills the element, may crop */
+}

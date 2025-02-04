@@ -1,0 +1,37 @@
+.checkbox__wrapper label {
+  cursor: pointer;
+}
+
+.checkbox__wrapper input[type="checkbox"] {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.checkbox__wrapper .checkbox {
+  display: inline-block;
+  height: 18px;
+  width: 18px;
+  margin-right: 4px;
+  border-radius: 3px;
+}
+
+/* Style mode colors */
+.checkbox__wrapper input[type="checkbox"] + .checkbox.checkbox--primary {
+  outline: 2px solid #8392a6;
+}
+
+.checkbox--primary {
+  background-color: #ffffff;
+}
+
+.checkbox__wrapper .checkbox__primary--active {
+  background-color: #3a6150;
+}
+
+.checkbox__wrapper input[type="checkbox"]:focus + .checkbox {
+  outline: 3px solid #2c493d;
+}
