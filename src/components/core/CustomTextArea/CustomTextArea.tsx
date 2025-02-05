@@ -30,7 +30,7 @@ export default function CustomTextArea({
           {label}
         </label>
       )}
-      <div className="customTextArea flex bg-white dark:bg-grey4 border-2 border-[#3a6150] text-sm p-2">
+      <div className="customTextArea flex bg-white dark:bg-grey4 border-2 border-black text-sm p-2">
         <textarea
           id={labelFor}
           name={name}

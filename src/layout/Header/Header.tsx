@@ -16,6 +16,7 @@ export default function Header() {
           className="w-full"
           Icon={<img src={search} alt="search icon"></img>}
           buttonMode={ButtonMode.Primary}
+          onButtonClick={() => console.log("clicked")}
           buttonClassName="rounded-[2px]"
           placeholder="Search this site"
         />

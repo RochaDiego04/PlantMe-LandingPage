@@ -24,7 +24,11 @@ export default function HeroSection() {
           </p>
         </div>
         <div>
-          <Button className="py-2 px-14" mode={ButtonMode.Primary}>
+          <Button
+            className="py-2 px-14"
+            mode={ButtonMode.Primary}
+            onClick={() => console.log("clicked")}
+          >
             Buy Now
           </Button>
         </div>

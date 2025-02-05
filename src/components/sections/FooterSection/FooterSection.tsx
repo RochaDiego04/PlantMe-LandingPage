@@ -12,13 +12,13 @@ export default function FooterSection() {
           <h2 className="pl-4 text-black font-extrabold text-4xl leading-14 mb-2.5">
             PlantMe
           </h2>
-          <p className="pl-4 text-sm leading-5 mb-14">
+          <p className="pl-4 text-sm leading-5 mb-14 ">
             Subscribe and be the first to know about our news and promotions.
           </p>
           <CustomInput
-            className="w-full mb-6"
-            containerClassname="border-none pl-0"
-            inputClassname="border-b-1"
+            className="w-full mb-6 "
+            containerClassname="border-none pl-0 no-outline"
+            inputClassname="border-b-1 focus:border-b-2"
             buttonText="Suscribe"
             buttonMode={ButtonMode.Primary}
             buttonClassName="py-3 px-12 ml-2 mt-[-10px]"

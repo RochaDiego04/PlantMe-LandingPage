@@ -1,3 +1,13 @@
 .customInput {
   border-radius: 4px;
 }
+
+.customInput:focus-within {
+  outline: 1px solid #3a6150;
+  border-color: #3a6150;
+}
+
+.customInput:focus-within.no-outline {
+  outline: none;
+  border-color: none;
+}

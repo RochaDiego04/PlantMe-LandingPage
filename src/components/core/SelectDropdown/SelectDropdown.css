@@ -1,0 +1,7 @@
+.placeholderContainer {
+  min-width: 90px;
+}
+
+.placeholderContainer:focus {
+  outline: 2px solid black;
+}

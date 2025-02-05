@@ -1,3 +1,8 @@
 .customTextArea {
   border-radius: 4px;
 }
+
+.customTextArea:focus-within {
+  outline: 1px solid #3a6150;
+  border-color: #3a6150;
+}

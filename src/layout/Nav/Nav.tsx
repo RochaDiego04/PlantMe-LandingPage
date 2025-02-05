@@ -1,6 +1,10 @@
+import { useState } from "react";
+import SelectDropdown from "../../components/core/SelectDropdown/SelectDropdown";
 import "./Nav.css";
 
 export default function Nav() {
+  const [value, setValue] = useState("");
+
   return (
     <nav className="flex items-center">
       <ul className="list-with-separator">
@@ -17,7 +21,12 @@ export default function Nav() {
           <a href="#">Site Map</a>
         </li>
         <li>
-          <a href="#">Eng</a>
+          <SelectDropdown
+            value={value}
+            onChange={setValue}
+            placeholder={"eng"}
+            options={["option 1", "option 2", "option 3"]}
+          ></SelectDropdown>
         </li>
       </ul>
     </nav>

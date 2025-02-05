@@ -14,6 +14,7 @@ type CustomInputProps = {
   buttonText?: string;
   buttonMode?: ButtonMode;
   placeholder?: string;
+  onButtonClick?: () => void;
   ariaLabel?: string;
   ariaDescribedBy?: string;
   containerClassname?: string;
@@ -32,6 +33,7 @@ export default function CustomInput({
   buttonText,
   buttonMode,
   placeholder,
+  onButtonClick,
   ariaLabel,
   ariaDescribedBy,
   containerClassname,
@@ -46,7 +48,7 @@ export default function CustomInput({
         </label>
       )}
       <div
-        className={`customInput flex bg-white dark:bg-grey4 items-center justify-center border-2 border-[#3a6150] text-sm pl-4 ${containerClassname}`}
+        className={`customInput flex bg-white dark:bg-grey4 items-center justify-center border-2 border-black text-sm pl-4 ${containerClassname}`}
       >
         <input
           type={inputType ? inputType : "text"}
@@ -60,10 +62,11 @@ export default function CustomInput({
         />
         {buttonMode ? (
           <Button
+            role="button"
             href="#"
             className={`text-center ${buttonClassName ? buttonClassName : ""}`}
             mode={buttonMode}
-            buttonType="anchor"
+            onClick={onButtonClick}
             Icon={Icon}
           >
             {buttonText}

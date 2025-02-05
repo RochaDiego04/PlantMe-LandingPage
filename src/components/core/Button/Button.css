@@ -4,6 +4,7 @@
   background: transparent;
   font-family: var(--body-font);
   text-decoration: none;
+  transition: all 0.2s;
 }
 
 .icon-button {
@@ -25,6 +26,7 @@
   cursor: pointer;
   background-color: #345747;
   outline: 3px solid #93d1b7;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.6);
 }
 
 .primary-button:active {
