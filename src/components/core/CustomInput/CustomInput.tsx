@@ -16,7 +16,8 @@ type CustomInputProps = {
   placeholder?: string;
   ariaLabel?: string;
   ariaDescribedBy?: string;
-
+  containerClassname?: string;
+  inputClassname?: string;
   [key: string]: unknown;
 };
 
@@ -33,6 +34,8 @@ export default function CustomInput({
   placeholder,
   ariaLabel,
   ariaDescribedBy,
+  containerClassname,
+  inputClassname,
   ...props
 }: CustomInputProps) {
   return (
@@ -43,7 +46,7 @@ export default function CustomInput({
         </label>
       )}
       <div
-        className={`customInput flex bg-white dark:bg-grey4 items-center justify-center border-2 border-[#3a6150] text-sm pl-4`}
+        className={`customInput flex bg-white dark:bg-grey4 items-center justify-center border-2 border-[#3a6150] text-sm pl-4 ${containerClassname}`}
       >
         <input
           type={inputType ? inputType : "text"}
@@ -52,7 +55,7 @@ export default function CustomInput({
           placeholder={placeholder ?? "Search"}
           aria-label={ariaLabel}
           aria-describedby={ariaDescribedBy}
-          className="w-full focus:border-none focus:outline-none bg-transparent text-[#3a6150] placeholder:text-[rgba(58,97,80,0.70)] mr-auto min-h-[2.0rem]"
+          className={`w-full focus:outline-none bg-transparent text-[#3a6150] placeholder:text-[rgba(58,97,80,0.70)] mr-auto min-h-[2.0rem] ${inputClassname}`}
           {...props}
         />
         {buttonMode ? (
