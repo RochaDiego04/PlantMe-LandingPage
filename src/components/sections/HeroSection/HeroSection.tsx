@@ -34,7 +34,11 @@ export default function HeroSection() {
         </div>
       </div>
       <div className="heroSection__rightSide">
-        <img src={image} alt="hero section plants image" />
+        <img
+          className="w-[70vh] object-cover"
+          src={image}
+          alt="hero section plants image"
+        />
       </div>
     </main>
   );

@@ -19,7 +19,13 @@ export default function ContactCard() {
             <Button
               buttonType="anchor"
               mode={ButtonMode.Option}
-              Icon={<img src={Socials} className=" w-5"></img>}
+              Icon={
+                <img
+                  src={Socials}
+                  className=" w-5"
+                  alt="phone number icon"
+                ></img>
+              }
               src="#"
               className=" gap-6"
             >
@@ -30,7 +36,7 @@ export default function ContactCard() {
             <Button
               buttonType="anchor"
               mode={ButtonMode.Option}
-              Icon={<img src={Socials} className=" w-5"></img>}
+              Icon={<img src={Socials} className=" w-5" alt="mail icon"></img>}
               src="#"
               className=" gap-6"
             >
@@ -41,7 +47,9 @@ export default function ContactCard() {
             <Button
               buttonType="anchor"
               mode={ButtonMode.Option}
-              Icon={<img src={Socials} className=" w-5"></img>}
+              Icon={
+                <img src={Socials} className=" w-5" alt="location icon"></img>
+              }
               src="#"
               className=" gap-6"
             >

@@ -20,7 +20,7 @@ export default function CustomCard({
       <img src={img} alt="card image" className="customCard__image" />
 
       <div className="customCard__content text-white">
-        <h4 className=" font-bold text-lg mb-3">{title}</h4>
+        <h3 className=" font-bold text-lg mb-3">{title}</h3>
         {children && children}
         <a className=" underline" href={link}>
           {linkName}
