@@ -1,7 +1,7 @@
 import { ButtonMode } from "../../../enums/ButtonMode";
 import CustomInput from "../../core/CustomInput/CustomInput";
-import mastercard from "../../../assets/payment_mastercard.jpg";
-import visa from "../../../assets/payment_visa.jpg";
+import mastercard from "../../../assets/payment_mastercard.webp";
+import visa from "../../../assets/payment_visa.webp";
 import "./FooterSection.css";
 
 export default function FooterSection() {

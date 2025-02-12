@@ -1,5 +1,5 @@
 .contactCard__container {
-  background-image: url("/src/assets/contactImage.png");
+  background-image: url("/src/assets/contactImage.webp");
   background-size: cover;
 }
 
@@ -7,7 +7,7 @@
   .contactCard__container {
     max-width: none;
     height: auto;
-    background-image: url("/src/assets/contactImage.png");
+    background-image: url("/src/assets/contactImage.webp");
     background-size: fit;
     background-repeat: no-repeat;
     background-position: center;

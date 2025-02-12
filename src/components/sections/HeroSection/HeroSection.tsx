@@ -1,6 +1,6 @@
 import { ButtonMode } from "../../../enums/ButtonMode";
 import Button from "../../core/Button/Button";
-import image from "../../../assets/HeroImage.png";
+import image from "../../../assets/HeroImage.webp";
 import "./HeroSection.css";
 
 export default function HeroSection() {
