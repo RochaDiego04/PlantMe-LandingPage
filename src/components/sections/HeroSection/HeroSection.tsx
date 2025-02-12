@@ -7,7 +7,7 @@ export default function HeroSection() {
   return (
     <main className="bg-[#f8f8f8] heroSection__container gap-4 pt-6 px-16 pb-12">
       <div className="heroSection__leftSide">
-        <h1 className="mb-9 text-[#3a6150] text-[3rem]">
+        <h1 className="heroSection__leftSide__title mb-9 text-[#3a6150] text-[3rem]">
           Lorem ipsum dolor sit amet
         </h1>
         <div className="mb-9">
@@ -25,7 +25,7 @@ export default function HeroSection() {
         </div>
         <div>
           <Button
-            className="py-2 px-14"
+            className="heroSection__leftSide__button py-2 px-14"
             mode={ButtonMode.Primary}
             onClick={() => console.log("clicked")}
           >

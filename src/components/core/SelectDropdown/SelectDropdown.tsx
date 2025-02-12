@@ -18,6 +18,8 @@ export default function SelectDropdown({
   const { open, setOpen, focusedIndex, dropdownRef, handleKeyDown } =
     useSelectDropdown(options, value, onChange);
 
+  const optionIds = options.map((_, index) => `select-option-${index}`);
+
   return (
     <div className="relative max-w-[320px]" ref={dropdownRef}>
       <div
@@ -39,10 +41,19 @@ export default function SelectDropdown({
         />
       </div>
       {open && (
-        <div className="absolute top-[105%] left-0 w-full max-h-[320px] py-2 border-1 border-grey2 rounded-lg bg-white">
+        <div
+          className="absolute top-[105%] left-0 w-full max-h-[320px] py-2 border-1 border-grey2 rounded-lg bg-white"
+          role="listbox"
+          aria-activedescendant={
+            focusedIndex >= 0 ? optionIds[focusedIndex] : undefined
+          }
+        >
           {options.map((option, index) => (
             <div
               key={option}
+              id={optionIds[index]}
+              role="option"
+              aria-selected={option === value}
               tabIndex={0}
               onClick={() => {
                 onChange(option);

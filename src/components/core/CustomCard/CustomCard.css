@@ -4,15 +4,29 @@
   background-color: #3a6150;
   padding: 1.5rem;
   padding-bottom: 2.2rem;
-  align-items: flex-start; /* Aligns items to the top */
+  align-items: flex-start;
+}
+
+@media (max-width: 768px) {
+  .customCard__container {
+    flex-direction: column;
+  }
 }
 
 .customCard__image {
   object-fit: cover;
-  flex-shrink: 0; /* Prevents shrinking */
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .customCard__image {
+    object-fit: cover;
+    flex-shrink: 0;
+    margin: 0 auto;
+  }
 }
 
 .customCard__content {
-  flex: 1; /* Allows text area to grow */
+  flex: 1;
   color: white;
 }

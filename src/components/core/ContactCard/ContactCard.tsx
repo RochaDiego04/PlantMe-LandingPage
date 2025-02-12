@@ -10,11 +10,11 @@ export default function ContactCard() {
         <h2 className="text-black font-extrabold text-4xl leading-14 mb-2.5">
           Contact Us
         </h2>
-        <p className=" text-sm leading-5 mb-14">
+        <p className="contactCard__top--info text-sm leading-5 mb-14">
           Fill up the form and ur Team will get back to you within 24 hours.
           Happy to see your message!
         </p>
-        <ul className="flex flex-col gap-1.5">
+        <ul className="flex flex-col gap-1.5 mb-2">
           <li>
             <Button
               buttonType="anchor"
@@ -56,7 +56,13 @@ export default function ContactCard() {
             <Button
               buttonType="anchor"
               mode={ButtonMode.Option}
-              Icon={<img src={Socials} className=" w-7"></img>}
+              Icon={
+                <img
+                  src={Socials}
+                  className=" w-7"
+                  alt="socials image: facebook"
+                ></img>
+              }
               src="#"
               className=" gap-6"
             ></Button>
@@ -65,7 +71,13 @@ export default function ContactCard() {
             <Button
               buttonType="anchor"
               mode={ButtonMode.Option}
-              Icon={<img src={Socials} className=" w-7"></img>}
+              Icon={
+                <img
+                  src={Socials}
+                  className=" w-7"
+                  alt="socials image: facebook"
+                ></img>
+              }
               src="#"
               className=" gap-6"
             ></Button>
@@ -74,7 +86,13 @@ export default function ContactCard() {
             <Button
               buttonType="anchor"
               mode={ButtonMode.Option}
-              Icon={<img src={Socials} className=" w-7"></img>}
+              Icon={
+                <img
+                  src={Socials}
+                  className=" w-7"
+                  alt="socials image: facebook"
+                ></img>
+              }
               src="#"
               className=" gap-6"
             ></Button>

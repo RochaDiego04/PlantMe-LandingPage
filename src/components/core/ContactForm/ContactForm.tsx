@@ -99,7 +99,7 @@ export default function ContactForm() {
       ))}
 
       <div className="flex justify-end">
-        <Button className="px-10 py-2.5" mode={ButtonMode.Primary}>
+        <Button className="px-10 py-2.5 mb-4" mode={ButtonMode.Primary}>
           Send Message
         </Button>
       </div>

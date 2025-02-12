@@ -3,7 +3,7 @@
   grid-template-columns: repeat(2, 1fr);
 }
 
-@media (min-width: var(--screen-sm)) {
+@media (max-width: 768px) {
   .heroSection__container {
     display: block;
   }
@@ -16,7 +16,25 @@
   align-self: center;
 }
 
+.heroSection__leftSide__button {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .heroSection__leftSide__title {
+    text-align: center;
+  }
+}
+
 .heroSection__rightSide {
   display: flex;
   justify-self: end;
+}
+@media (max-width: 768px) {
+  .heroSection__rightSide {
+    justify-self: center;
+  }
+  .heroSection__rightSide img {
+    max-width: 350px;
+  }
 }

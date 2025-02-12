@@ -1,4 +1,19 @@
 .contactCard__container {
   background-image: url("/src/assets/contactImage.png");
-  background-size: cover; /* Fills the element, may crop */
+  background-size: cover;
+}
+
+@media (max-width: 1170px) {
+  .contactCard__container {
+    max-width: none;
+    height: auto;
+    background-image: url("/src/assets/contactImage.png");
+    background-size: fit;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 60%;
+  }
+  .contactCard__top--info {
+    margin-bottom: 1.5rem;
+  }
 }

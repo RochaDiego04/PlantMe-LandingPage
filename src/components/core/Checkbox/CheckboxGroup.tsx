@@ -13,7 +13,7 @@ export default function CheckboxGroup({
 }: CheckboxGroupProps) {
   return (
     <div className={`${className ? className : ""}`}>
-      <div className="flex gap-12">
+      <div className="flex flex-wrap gap-12">
         {labels.map((label, index) => (
           <Checkbox
             key={index}

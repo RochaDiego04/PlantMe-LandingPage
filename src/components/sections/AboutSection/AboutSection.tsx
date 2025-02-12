@@ -1,9 +1,10 @@
 import CustomCard from "../../core/CustomCard/CustomCard";
 import cardImage from "../../../assets/cardImage.jpg";
+import "./AboutSection.css";
 
 export default function AboutSection() {
   return (
-    <section className="flex gap-5 py-20 px-16">
+    <section className="aboutSection__container flex gap-5 py-20 px-16">
       <CustomCard
         title={"About Us"}
         linkName={"Learn more about →"}
