@@ -5,6 +5,7 @@ import CustomTextArea from "../CustomTextArea/CustomTextArea";
 import CheckboxGroup from "../Checkbox/CheckboxGroup";
 import Button from "../Button/Button";
 import { ButtonMode } from "../../../enums/ButtonMode";
+import "./ContactForm.css";
 
 const specializationOptions = [
   { value: "ui", label: "UI Developer" },
@@ -25,7 +26,7 @@ export default function ContactForm() {
   const [radioValue, setRadioValue] = useState("");
   return (
     <form className="w-full pt-12 pl-5 pr-7">
-      <div className=" flex gap-4.5 mb-6.5">
+      <div className=" flex flex-col gap-4.5 mb-6.5 sm:flex-row">
         <CustomInput
           placeholder="John"
           label="First Name"
@@ -45,7 +46,7 @@ export default function ContactForm() {
           className="flex-1"
         />
       </div>
-      <div className=" flex gap-4.5 mb-6.5">
+      <div className=" flex flex-col gap-4.5 mb-6.5 sm:flex-row">
         <CustomInput
           placeholder="Email"
           inputType="email"
@@ -68,7 +69,7 @@ export default function ContactForm() {
         />
       </div>
       <RadioGroup
-        className=""
+        className="flex flex-col gap-2 flex-wrap sm:flex-row sm:gap-7"
         name={"Specialization Area"}
         options={specializationOptions}
         selectedValue={radioValue}

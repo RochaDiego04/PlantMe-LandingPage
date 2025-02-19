@@ -1,15 +1,26 @@
-.list-with-separator {
+.nav-menu {
   display: flex;
+  gap: 1rem;
   padding: 0;
-  list-style-type: none;
+  list-style: none;
   align-items: center;
 }
 
-.list-with-separator li {
-  padding: 0 10px;
-  border-right: 1px solid #000;
-}
+/* Mobile Navigation */
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
 
-.list-with-separator li:last-child {
-  border-right: none;
+  .nav-menu li {
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav-menu li:last-child {
+    border-bottom: none;
+  }
 }

@@ -6,8 +6,8 @@ export default function Nav() {
   const [value, setValue] = useState("");
 
   return (
-    <nav className="flex items-center">
-      <ul className="list-with-separator">
+    <nav>
+      <ul className="nav-menu">
         <li>
           <a href="#">About Us</a>
         </li>
@@ -26,7 +26,7 @@ export default function Nav() {
             onChange={setValue}
             placeholder={"eng"}
             options={["option 1", "option 2", "option 3"]}
-          ></SelectDropdown>
+          />
         </li>
       </ul>
     </nav>

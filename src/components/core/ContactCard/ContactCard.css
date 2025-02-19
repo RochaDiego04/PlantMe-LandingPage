@@ -1,6 +1,7 @@
 .contactCard__container {
   background-image: url("/src/assets/contactImage.webp");
   background-size: cover;
+  background-position-y: 50%;
 }
 
 @media (max-width: 1170px) {

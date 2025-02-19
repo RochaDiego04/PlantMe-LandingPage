@@ -1,5 +1,5 @@
 import CustomCard from "../../core/CustomCard/CustomCard";
-import cardImage from "../../../assets/cardImage.jpg";
+import cardImage from "../../../assets/cardImage.webp";
 import "./AboutSection.css";
 
 export default function AboutSection() {
